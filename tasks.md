@@ -33,30 +33,30 @@
 ## Phase 2: Authentication & User Management
 
 ### 2.1 Authentication Setup
-- [ ] Install and configure NextAuth.js
-- [ ] Create authentication API routes
-- [ ] Set up JWT configuration
-- [ ] Implement password hashing (bcrypt)
-- [ ] Create login page UI
-- [ ] Create registration page UI
-- [ ] Add form validation (Zod or similar)
-- [ ] Implement error handling for auth
+- [x] Install and configure NextAuth.js
+- [x] Create authentication API routes
+- [x] Set up JWT configuration
+- [x] Implement password hashing (bcrypt)
+- [x] Create login page UI
+- [x] Create registration page UI
+- [x] Add form validation (Zod or similar)
+- [x] Implement error handling for auth
 
 ### 2.2 User Models & Schema
-- [ ] Define User schema (MongoDB)
-- [ ] Create User model with Mongoose
-- [ ] Add role enum (Teacher, Student, Parent)
-- [ ] Implement parent-child linking schema
-- [ ] Create user creation utilities
+- [x] Define User schema (MongoDB)
+- [x] Create User model with Mongoose
+- [x] Add role enum (Teacher, Student, Parent)
+- [x] Implement parent-child linking schema
+- [x] Create user creation utilities
 
 ### 2.3 Role-Based Access Control
-- [ ] Create middleware for role checking
-- [ ] Implement protected route wrapper
-- [ ] Create role-based layout components
-- [ ] Add role-based navigation guards
+- [x] Create middleware for role checking
+- [x] Implement protected route wrapper
+- [x] Create role-based layout components
+- [x] Add role-based navigation guards
 
 ### 2.4 Profile Management
-- [ ] Create user profile page
+- [x] Create user profile page
 - [ ] Implement profile update functionality
 - [ ] Add profile picture upload
 - [ ] Create parent-child linking interface
@@ -64,22 +64,22 @@
 ## Phase 3: Class Management
 
 ### 3.1 Class Data Model
-- [ ] Define Class schema (MongoDB)
-- [ ] Create Class model
-- [ ] Set up relationships (Teacher, Students)
-- [ ] Add validation rules
+- [x] Define Class schema (MongoDB)
+- [x] Create Class model
+- [x] Set up relationships (Teacher, Students)
+- [x] Add validation rules
 
 ### 3.2 Class API Routes
-- [ ] Create GET /api/classes (list classes)
-- [ ] Create GET /api/classes/[id] (class details)
-- [ ] Create POST /api/classes (create class - teacher only)
-- [ ] Create PUT /api/classes/[id] (update class)
-- [ ] Create DELETE /api/classes/[id] (delete class)
-- [ ] Create POST /api/classes/[id]/students (add students)
-- [ ] Create DELETE /api/classes/[id]/students (remove students)
+- [x] Create GET /api/classes (list classes)
+- [x] Create GET /api/classes/[id] (class details)
+- [x] Create POST /api/classes (create class - teacher only)
+- [x] Create PUT /api/classes/[id] (update class)
+- [x] Create DELETE /api/classes/[id] (delete class)
+- [x] Create POST /api/classes/[id]/students (add students)
+- [x] Create DELETE /api/classes/[id]/students (remove students)
 
 ### 3.3 Class UI Components
-- [ ] Create classes list page
+- [x] Create classes list page
 - [ ] Create class detail page
 - [ ] Create class creation form
 - [ ] Create class edit form
@@ -89,28 +89,28 @@
 ## Phase 4: Resource Management
 
 ### 4.1 Resource Data Model
-- [ ] Define Resource schema (MongoDB)
-- [ ] Create Resource model
+- [x] Define Resource schema (MongoDB)
+- [x] Create Resource model
 - [ ] Set up file storage (Vercel Blob or S3)
-- [ ] Add file type validation
+- [x] Add file type validation
 
 ### 4.2 Resource API Routes
-- [ ] Create GET /api/resources (list resources)
-- [ ] Create GET /api/resources/[id] (resource details)
-- [ ] Create POST /api/resources (upload resource)
-- [ ] Create PUT /api/resources/[id] (update resource)
-- [ ] Create DELETE /api/resources/[id] (delete resource)
-- [ ] Create GET /api/resources/class/[classId] (class resources)
+- [x] Create GET /api/resources (list resources)
+- [x] Create GET /api/resources/[id] (resource details)
+- [x] Create POST /api/resources (upload resource)
+- [x] Create PUT /api/resources/[id] (update resource)
+- [x] Create DELETE /api/resources/[id] (delete resource)
+- [x] Create GET /api/resources/class/[classId] (class resources)
 - [ ] Implement file upload handler
 
 ### 4.3 Resource UI Components
-- [ ] Create resources library page
+- [x] Create resources library page
 - [ ] Create resource upload interface
 - [ ] Create resource preview component
-- [ ] Add resource categories/tags
+- [x] Add resource categories/tags
 - [ ] Implement resource search and filtering
-- [ ] Create download functionality
-- [ ] Add resource organization by class
+- [x] Create download functionality
+- [x] Add resource organization by class
 
 ## Phase 5: Schedule Management (Emploi de Temps)
 

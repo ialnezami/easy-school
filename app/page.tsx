@@ -1,15 +1,14 @@
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm">
-        <h1 className="text-4xl font-bold text-center mb-4">
-          Welcome to Easy School
-        </h1>
-        <p className="text-center text-muted-foreground">
-          School Management Platform - Coming Soon
-        </p>
-      </div>
-    </main>
-  );
+import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
+
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+  if (session?.user) {
+    redirect("/dashboard");
+  } else {
+    redirect("/auth/login");
+  }
 }
 
