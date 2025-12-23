@@ -115,21 +115,21 @@
 ## Phase 5: Schedule Management (Emploi de Temps)
 
 ### 5.1 Schedule Data Model
-- [ ] Define Schedule schema (MongoDB)
-- [ ] Create Schedule model
-- [ ] Add time slot validation
-- [ ] Set up day-of-week enum
+- [x] Define Schedule schema (MongoDB)
+- [x] Create Schedule model
+- [x] Add time slot validation
+- [x] Set up day-of-week enum
 
 ### 5.2 Schedule API Routes
-- [ ] Create GET /api/schedules (list schedules)
-- [ ] Create GET /api/schedules/class/[classId] (class schedule)
-- [ ] Create POST /api/schedules (create schedule)
-- [ ] Create PUT /api/schedules/[id] (update schedule)
-- [ ] Create DELETE /api/schedules/[id] (delete schedule)
-- [ ] Add conflict detection logic
+- [x] Create GET /api/schedules (list schedules)
+- [x] Create GET /api/schedules/class/[classId] (class schedule)
+- [x] Create POST /api/schedules (create schedule)
+- [x] Create PUT /api/schedules/[id] (update schedule)
+- [x] Create DELETE /api/schedules/[id] (delete schedule)
+- [x] Add conflict detection logic
 
 ### 5.3 Schedule UI Components
-- [ ] Create timetable/weekly view page
+- [x] Create timetable/weekly view page
 - [ ] Create schedule creation form
 - [ ] Create schedule edit interface
 - [ ] Add calendar integration
@@ -139,18 +139,18 @@
 ## Phase 6: Messaging System
 
 ### 6.1 Message Data Model
-- [ ] Define Message schema (MongoDB)
-- [ ] Create Message model
-- [ ] Add read/unread status
-- [ ] Set up message attachments
+- [x] Define Message schema (MongoDB)
+- [x] Create Message model
+- [x] Add read/unread status
+- [x] Set up message attachments
 
 ### 6.2 Message API Routes
-- [ ] Create GET /api/messages (list conversations)
-- [ ] Create GET /api/messages/[conversationId] (get messages)
-- [ ] Create POST /api/messages (send message)
-- [ ] Create PUT /api/messages/[id]/read (mark as read)
-- [ ] Create DELETE /api/messages/[id] (delete message)
-- [ ] Implement message validation (check allowed relationships)
+- [x] Create GET /api/messages (list conversations)
+- [x] Create GET /api/messages/[conversationId] (get messages)
+- [x] Create POST /api/messages (send message)
+- [x] Create PUT /api/messages/[id]/read (mark as read)
+- [x] Create DELETE /api/messages/[id] (delete message)
+- [x] Implement message validation (check allowed relationships)
 
 ### 6.3 Real-time Messaging
 - [ ] Set up WebSocket or Server-Sent Events
@@ -159,45 +159,45 @@
 - [ ] Create notification system
 
 ### 6.4 Messaging UI Components
-- [ ] Create messages/chat page
-- [ ] Create conversation list component
-- [ ] Create chat interface component
-- [ ] Add message input and send button
+- [x] Create messages/chat page
+- [x] Create conversation list component
+- [x] Create chat interface component
+- [x] Add message input and send button
 - [ ] Implement file attachment in messages
 - [ ] Add message search functionality
-- [ ] Create notification badges
+- [x] Create notification badges
 
 ## Phase 7: Dashboard & Navigation
 
 ### 7.1 Dashboard Components
-- [ ] Create role-specific dashboard layouts
-- [ ] Teacher dashboard (classes, recent resources, messages)
-- [ ] Student dashboard (my classes, schedule, messages)
-- [ ] Parent dashboard (child overview, messages)
+- [x] Create role-specific dashboard layouts
+- [x] Teacher dashboard (classes, recent resources, messages)
+- [x] Student dashboard (my classes, schedule, messages)
+- [x] Parent dashboard (child overview, messages)
 - [ ] Add activity feed component
 - [ ] Create quick stats widgets
 
 ### 7.2 Navigation
-- [ ] Create main navigation component
-- [ ] Add role-based menu items
-- [ ] Implement parent account switcher
+- [x] Create main navigation component
+- [x] Add role-based menu items
+- [x] Implement parent account switcher
 - [ ] Create mobile responsive navigation
 - [ ] Add breadcrumb navigation
 
 ## Phase 8: Parent Account Switching
 
 ### 8.1 Account Switching Logic
-- [ ] Implement parent-to-child view switching
-- [ ] Create context/provider for account switching
+- [x] Implement parent-to-child view switching
+- [x] Create context/provider for account switching
 - [ ] Update all components to respect current view
-- [ ] Add visual indicator for switched account
-- [ ] Implement switch back functionality
+- [x] Add visual indicator for switched account
+- [x] Implement switch back functionality
 
 ### 8.2 UI for Account Switching
 - [ ] Create account switcher dropdown
-- [ ] Add "Viewing as [Child Name]" indicator
+- [x] Add "Viewing as [Child Name]" indicator
 - [ ] Create switch confirmation dialog
-- [ ] Update navigation for child view
+- [x] Update navigation for child view
 
 ## Phase 9: Styling & UI/UX
 
