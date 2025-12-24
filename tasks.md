@@ -105,10 +105,10 @@
 
 ### 4.3 Resource UI Components
 - [x] Create resources library page
-- [ ] Create resource upload interface
-- [ ] Create resource preview component
+- [x] Create resource upload interface
+- [x] Create resource preview component
 - [x] Add resource categories/tags
-- [ ] Implement resource search and filtering
+- [x] Implement resource search and filtering
 - [x] Create download functionality
 - [x] Add resource organization by class
 

@@ -144,20 +144,43 @@ export default function NewResourcePage() {
                 required
               />
               <p className="text-xs text-muted-foreground">
-                For now, please provide a URL to the file. File upload will be added later.
+                Provide a URL to the file. Supported: PDF, DOCX, images, videos, etc.
               </p>
+              {formData.fileUrl && (
+                <div className="mt-2 p-2 bg-muted rounded-md">
+                  <p className="text-xs text-muted-foreground mb-1">Preview:</p>
+                  <a
+                    href={formData.fileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary hover:underline"
+                  >
+                    {formData.fileUrl}
+                  </a>
+                </div>
+              )}
             </div>
             <div className="space-y-2">
               <Label htmlFor="fileType">File Type *</Label>
-              <Input
+              <Select
                 id="fileType"
                 value={formData.fileType}
                 onChange={(e) =>
                   setFormData({ ...formData, fileType: e.target.value })
                 }
-                placeholder="PDF, DOCX, etc."
                 required
-              />
+              >
+                <option value="">Select file type</option>
+                <option value="PDF">PDF</option>
+                <option value="DOCX">DOCX (Word Document)</option>
+                <option value="XLSX">XLSX (Excel Spreadsheet)</option>
+                <option value="PPTX">PPTX (PowerPoint)</option>
+                <option value="Image">Image (JPG, PNG, GIF)</option>
+                <option value="Video">Video</option>
+                <option value="Audio">Audio</option>
+                <option value="ZIP">ZIP Archive</option>
+                <option value="Other">Other</option>
+              </Select>
             </div>
             <div className="space-y-2">
               <Label htmlFor="tags">Tags (comma-separated)</Label>
